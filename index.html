@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GPT Babel Dashboard</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="app">
+            <!-- Search Bar -->
+            <input type="text" id="search-bar" placeholder="Search GPTs..." />
+            <!-- Add GPT Button -->
+            <button id="add-gpt-button">Add New GPT</button>
+            <!-- GPT Listings Table -->
+            <table id="gpt-listings">
+                <thead>
+                <tr>
+                    <th>GPT Logo</th>
+                    <th>GPT Name</th>
+                    <th>Created by</th>
+                    <th>Description</th>
+                    <th>Prompt Starter Messages</th>
+                    <th>Welcome Message</th>
+                    <th>View GPT</th>
+                </tr>
+                </thead>
+    <tbody>
+        <!-- Dynamic content here -->
+    </tbody>
+            </table>
+
+
+
+            <!-- Modal for Adding New GPT -->
+            <div id="add-gpt-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Add New GPT URL</h2>
+                    <form id="add-gpt-form">
+                        <label for="url">URL:</label>
+                        <input type="url" id="url" name="url" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+
+</html>
